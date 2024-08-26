@@ -10,8 +10,8 @@ function Character({ person, planetName }) {
   };
 
   return (
-    <div className='character-card'>
-      <h3 className='character-name' onClick={handleNameClick}>
+    <div className='character-card' onClick={handleNameClick}>
+      <h3 className='character-name'>
         {person.name}  
       </h3>
       {showPlanet && (
