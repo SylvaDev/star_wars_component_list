@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Character() { // ❗ Add the props
-  // ❗ Create a state to hold whether the homeworld is rendering or not
-  // ❗ Create a "toggle" click handler to show or remove the homeworld
+function Character({ person, planetName }) {
+  // State to control the visibility of the homeworld information
+  const [showPlanet, setShowPlanet] = useState(false);
+
+  // Toggle the visibility of the homeworld information
+  const handleNameClick = () => {
+    setShowPlanet(!showPlanet);
+  };
+
   return (
-    <div>
-      {/* Use the same markup with the same attributes as in the mock */}
+    <div className='character-card'>
+      <h3 className='character-name' onClick={handleNameClick}>
+        {person.name}  
+      </h3>
+      {showPlanet && (
+        <p>Planet: <span className='character-planet'>{planetName}</span></p>
+      )}
     </div>
   )
 }
