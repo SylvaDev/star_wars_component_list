@@ -35,7 +35,8 @@ function App() {
   return (
     <div>
       <h2>Star Wars Characters</h2>
-      <p>See the README of the project for instructions on completing this challenge</p>
+      <p>This project is a simple React application that displays a list of Star Wars characters and their homeworlds<br />
+      by pulling data from the Star Wars mock API written in the backend</p>
       {people.map(person => (
         <Character 
           key={person.id} 
