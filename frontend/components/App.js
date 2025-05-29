@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Character from './Character'
 
-const urlPlanets = 'http://localhost:9009/api/planets'
-const urlPeople = 'http://localhost:9009/api/people'
+const urlPlanets = '/api/planets'
+const urlPeople = '/api/people'
 
 function App() {
   const [people, setPeople] = useState([]);
