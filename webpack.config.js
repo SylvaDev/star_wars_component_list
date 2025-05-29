@@ -17,7 +17,7 @@ const FRONTEND_PORT = 3003
 
 const INDEX_HTML_PATH = './frontend/index.html'
 const INDEX_JS_PATH = './frontend/index.js'
-const DIST_FOLDER = 'dist'
+const DIST_FOLDER = 'public'
 const BUNDLE_FILE = 'index.js'
 const AUDIO = 'audio/'
 
